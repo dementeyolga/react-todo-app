@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
+import styles from './TodoList.module.scss';
+import TodoListItem from './TodoListItem';
 
-interface TodoProps {
-
-}
+interface TodoProps {}
 
 const TodoList: React.FC<TodoProps> = () => {
-    return (
-        <div>
-            todo list
-        </div>
-    );
+	return (
+		<div className={styles.todo}>
+			<TodoListItem />
+		</div>
+	);
 };
 
 export default TodoList;
